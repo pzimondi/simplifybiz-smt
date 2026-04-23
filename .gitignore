@@ -1,0 +1,5 @@
+.idea/
+debug-error.txt
+*.log
+.DS_Store
+Thumbs.db
