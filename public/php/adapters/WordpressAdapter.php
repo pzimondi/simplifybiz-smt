@@ -1,8 +1,4 @@
 <?php
-/**
- * Adapter for handling WordPress core events on the SMT site.
- * Hooks into user creation to auto-enroll users into MemberPress.
- */
 
 namespace SMPLFY\smt;
 

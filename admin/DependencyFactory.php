@@ -14,9 +14,10 @@ class DependencyFactory {
         self::$initialized = true;
 
         // Usecases
-        $googleChatNotification = new GoogleChatNotification();
+        $memberPressAutoEnroll = new MemberPressAutoEnroll();
 
         // Adapters
-        new GravityFormsAdapter( $googleChatNotification );
+        new GravityFormsAdapter( $memberPressAutoEnroll );
+        new WordpressAdapter( $memberPressAutoEnroll );
     }
 }
