@@ -1,0 +1,1318 @@
+@media only screen and (min-width: 200px) {
+    .js .nav-primary {
+        display: block;
+        padding-top: 15px;
+    }
+}
+
+#genesis-mobile-nav-primary {
+    display: none;
+}
+
+.genesis-nav-menu a {
+    font-size: 1.3em;
+}
+
+.site-inner {
+    margin-bottom: -40px;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+/* Sticky Footer */
+.site-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 99vh;
+}
+
+.site-inner {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.subscribe .gform-field-label,
+#gfield_consent_description_4_6 {
+    font-size: 1em;
+}
+
+/* ================================================
+   NAV — Get an Estimate button
+   ================================================ */
+.menu-item-get-estimate>a {
+    background: #0000e0 !important;
+    color: #fff !important;
+    border-radius: 100px !important;
+    padding: 8px 20px !important;
+    margin-left: 8px !important;
+    transition: background 0.2s !important;
+}
+
+.menu-item-get-estimate>a:hover {
+    background: #44a400 !important;
+    color: #fff !important;
+}
+
+/* ================================================
+   HERO — right column image + badge
+   ================================================ */
+.smt-hero-right-col .gb-block-layout-column-inner {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    padding: 0 !important;
+}
+
+.smt-hero-img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.smt-hero-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.smt-hero-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #44a400 0%, rgba(68, 164, 0, 0.4) 50%, transparent 100%);
+    z-index: 1;
+}
+
+.smt-hero-badge {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 16px 22px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    z-index: 2;
+}
+
+.smt-badge-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0000e0;
+    line-height: 1;
+}
+
+.smt-badge-price span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.smt-badge-label {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.smt-badge-note {
+    font-size: 14px;
+    color: #44a400;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+.smt-eyebrow {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-transform: uppercase !important;
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+}
+
+.smt-phone-line {
+    font-size: 16px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-top: 8px !important;
+    margin-bottom: 0 !important;
+}
+
+.smt-phone-line strong {
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .smt-hero-right-col .gb-block-layout-column-inner {
+        min-height: 260px;
+    }
+}
+
+/* ================================================
+   FORM FIELDS — light green
+   ================================================ */
+#gform_wrapper_3 .gfield_label,
+#gform_wrapper_3 .gform-field-label {
+    font-weight: 700 !important;
+    color: #2a5a10 !important;
+    font-size: 0.85em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+#gform_wrapper_3 input:not([type="submit"]):not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+#gform_wrapper_3 textarea,
+#gform_wrapper_3 select {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    color: #1f1f1f !important;
+    padding: 11px 14px !important;
+}
+
+#gform_wrapper_3 input:not([type="submit"]):not([type="hidden"]):focus,
+#gform_wrapper_3 textarea:focus,
+#gform_wrapper_3 select:focus {
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(68, 164, 0, 0.12) !important;
+}
+
+/* Rich text field */
+#field_3_1 .wp-editor-wrap {
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    background: #edfaed !important;
+}
+
+#field_3_1 .wp-editor-container {
+    background: #edfaed !important;
+}
+
+#field_3_1 .mce-tinymce,
+#field_3_1 .mce-container,
+#field_3_1 .mce-edit-area {
+    background: #edfaed !important;
+    border: none !important;
+}
+
+#field_3_1 .wp-editor-area {
+    background: #edfaed !important;
+}
+
+#field_3_1 iframe {
+    background: #edfaed !important;
+}
+
+#field_3_1 .mce-toolbar-grp,
+#field_3_1 .mce-top-part {
+    background: #edfaed !important;
+    border-bottom: 1px solid #a8d8a8 !important;
+}
+
+#field_3_1 .quicktags-toolbar {
+    background: #edfaed !important;
+    border-bottom: 1px solid #a8d8a8 !important;
+}
+
+/* State select field — vertical alignment */
+#gform_wrapper_3 select {
+    line-height: normal !important;
+    height: auto !important;
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+    vertical-align: middle !important;
+    display: block !important;
+}
+
+/* Lock City, State, ZIP — read-only appearance */
+#input_3_6_3,
+#input_3_6_4,
+#input_3_6_5 {
+    pointer-events: none !important;
+    background: #d8f0d8 !important;
+    color: #2a5a10 !important;
+    cursor: not-allowed !important;
+    opacity: 0.85 !important;
+    border-color: #a8d8a8 !important;
+}
+
+/* Submit button */
+#gform_wrapper_3 .gform-footer input[type="submit"],
+#gform_wrapper_3 .gform_footer input[type="submit"],
+#gform_wrapper_3 input[type="submit"],
+#gform_submit_button_3 {
+    background-color: #0000e0 !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 14px 2.5em !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    margin-top: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 224, 0.25) !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    display: block !important;
+    text-align: center !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    transition: background-color 0.2s !important;
+}
+
+#gform_wrapper_3 .gform-footer input[type="submit"]:hover,
+#gform_wrapper_3 .gform_footer input[type="submit"]:hover,
+#gform_submit_button_3:hover {
+    background-color: #44a400 !important;
+    color: #ffffff !important;
+}
+
+/* Force submit pill shape */
+#gform_3 .gform_footer input[type="submit"],
+#gform_3 .gform-footer input[type="submit"] {
+    border-radius: 100px !important;
+    background: #0000e0 !important;
+    color: #fff !important;
+    padding: 14px 2em !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+/* ================================================
+   SERVICES SECTION
+   ================================================ */
+.smt-section-eyebrow {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #44a400;
+    text-transform: uppercase;
+    margin-bottom: 8px !important;
+    margin-top: 0 !important;
+}
+
+.smt-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.smt-svc-card {
+    border: 1.5px solid #d8f0c0;
+    border-radius: 12px;
+    padding: 28px 22px 22px !important;
+    background: #f8fdf4;
+    position: relative;
+    overflow: hidden;
+}
+
+.smt-svc-num {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #e8f5d0;
+    line-height: 1;
+    z-index: 0;
+}
+
+.smt-svc-icon {
+    width: 36px;
+    height: 36px;
+    background: #44a400;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.smt-svc-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: #fff;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.smt-svc-card h3 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #1f1f1f !important;
+    margin-bottom: 6px !important;
+    margin-top: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+
+.smt-svc-card p {
+    font-size: 16px !important;
+    color: #666 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* ================================================
+   HOW IT WORKS
+   ================================================ */
+.smt-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+    overflow: visible !important;
+}
+
+.smt-step-card {
+    background: #f8fff4;
+    border: 1.5px solid #d4f0b8;
+    border-radius: 14px;
+    padding: 24px 18px;
+    text-align: center;
+    position: relative;
+}
+
+.smt-step-card:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #0000e0;
+    font-size: 18px;
+    opacity: 0.4;
+    z-index: 2;
+}
+
+.smt-step-num {
+    width: 42px;
+    height: 42px;
+    background: #0000e0;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 auto 14px;
+}
+
+.smt-step-card h4 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #1f1f1f !important;
+    margin-bottom: 6px !important;
+    margin-top: 0 !important;
+}
+
+.smt-step-card p {
+    font-size: 15px !important;
+    color: #555 !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+}
+
+/* ================================================
+   WE COME TO YOU
+   ================================================ */
+.smt-come-section {
+    background-color: #ffffff !important;
+}
+
+.smt-come-section .wp-block-image img {
+    border-radius: 14px !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 224, 0.1) !important;
+}
+
+/* ================================================
+   PRICING — badges + CTA
+   ================================================ */
+.smt-pricing-badges {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0 28px;
+}
+
+.smt-pricing-badge {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.smt-pricing-cta {
+    margin-top: 4px;
+}
+
+.smt-pricing-cta a {
+    background: #fff;
+    color: #0000e0 !important;
+    padding: 13px 32px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: none !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: background 0.2s, color 0.2s;
+}
+
+.smt-pricing-cta a:hover {
+    background: #0000e0;
+    color: #fff !important;
+}
+
+/* ================================================
+   WHAT CAN WE DO — checklist
+   ================================================ */
+.smt-wcdo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.smt-wcdo-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.smt-wcdo-check {
+    width: 22px;
+    height: 22px;
+    background: #44a400;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.smt-wcdo-text strong {
+    display: block;
+    font-size: 14px;
+    color: #1f1f1f;
+    margin-bottom: 2px;
+}
+
+.smt-wcdo-text span {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ================================================
+   BUTTON HOVER EFFECTS
+   ================================================ */
+.smt-hero-section .wp-block-button__link[href="#gform_wrapper_3"] {
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s !important;
+}
+
+.smt-hero-section .wp-block-button__link[href="#gform_wrapper_3"]:hover {
+    background-color: #0000e0 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 224, 0.35) !important;
+}
+
+.wp-block-button__link[href="tel:+13854974090"] {
+    transition: background-color 0.2s, box-shadow 0.2s !important;
+}
+
+.wp-block-button__link[href="tel:+13854974090"]:hover {
+    background-color: #44a400 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(68, 164, 0, 0.35) !important;
+}
+
+/* ================================================
+   SCROLL TO TOP BUTTON
+   ================================================ */
+.smt-scroll-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 46px;
+    height: 46px;
+    background: #0000e0;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 224, 0.35);
+    transition: background 0.2s, transform 0.2s;
+    z-index: 9999;
+    text-decoration: none;
+}
+
+.smt-scroll-top:hover {
+    background: #44a400;
+    transform: translateY(-3px);
+}
+
+.smt-scroll-top.visible {
+    display: flex;
+}
+
+/* ================================================
+   FOOTER
+   ================================================ */
+.site-footer {
+    background: #0000e0 !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    padding: 20px 5% !important;
+}
+
+.site-footer p {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 12px !important;
+    margin: 0 !important;
+}
+
+.site-footer a {
+    color: rgba(255, 255, 255, 0.6) !important;
+    text-decoration: none !important;
+}
+
+.site-footer a:hover {
+    color: #7aff7a !important;
+}
+
+/* ================================================
+   MOBILE RESPONSIVE
+   ================================================ */
+@media only screen and (max-width: 768px) {
+    .smt-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .smt-steps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .smt-step-card:not(:last-child)::after {
+        display: none;
+    }
+}
+
+
+/* FORM — card wrapper blue border + shadow */
+#gform_wrapper_3 {
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 28px 28px 20px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
+}
+
+/* WHAT HAPPENS NEXT — green info box */
+.smt-next-steps {
+    background: #ecffeb;
+    border-left: 4px solid #44a400;
+    border-radius: 0 10px 10px 0;
+    padding: 16px 20px;
+    margin-top: 16px;
+}
+
+.smt-next-steps p {
+    font-size: 13px !important;
+    color: #2a5a10 !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+}
+
+.smt-next-steps strong {
+    color: #1a3a08 !important;
+}
+
+
+/* TESTIMONIALS SECTION */
+.smt-test-section {
+    background: #fafcff;
+}
+
+.smt-test-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.smt-test-card {
+    background: #fff;
+    border: 1.5px solid #e4eaff;
+    border-radius: 14px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 224, 0.04);
+}
+
+.smt-test-stars {
+    color: #f5a623;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.smt-test-card blockquote {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.65;
+    margin: 0 0 14px;
+    font-style: italic;
+    border: none;
+    padding: 0;
+}
+
+.smt-test-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smt-test-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #0000e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.smt-test-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.smt-test-loc {
+    font-size: 14px;
+    color: #999;
+}
+
+@media only screen and (max-width: 768px) {
+    .smt-test-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* FREE OFFER PAGE */
+.smt-offer-hero {
+    text-align: center;
+}
+
+.smt-offer-form-wrap {
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px 14px 0 0;
+    padding: 24px 24px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
+}
+
+.smt-offer-form-header h3 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #1f1f1f !important;
+    margin-bottom: 4px !important;
+    margin-top: 0 !important;
+}
+
+.smt-offer-form-header p {
+    font-size: 13px !important;
+    color: #666 !important;
+    margin-bottom: 16px !important;
+}
+
+.smt-offer-how {
+    background: #f0f8ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+.smt-offer-how h3 {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #1f1f1f !important;
+    margin-bottom: 12px !important;
+    margin-top: 0 !important;
+}
+
+.smt-offer-how p {
+    font-size: 13px !important;
+    color: #555 !important;
+    margin-bottom: 8px !important;
+    line-height: 1.5 !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.smt-offer-how p::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #0000e0;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.smt-offer-body .gb-block-layout-column-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.smt-offer-img-wrap {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 16px 48px rgba(0, 0, 224, 0.1);
+    margin-top: 28px;
+    flex: 1;
+    display: flex;
+}
+
+.smt-offer-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 200px;
+}
+
+.smt-offer-trust {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.smt-offer-trust-item {
+    background: #ecffeb;
+    border: 1px solid #c0e0b0;
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2a5a10;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Free Offer form fields */
+#gform_wrapper_4 .gfield_label,
+#gform_wrapper_4 .gform-field-label {
+    font-weight: 700 !important;
+    color: #2a5a10 !important;
+    font-size: 0.85em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+#gform_wrapper_4 input:not([type="submit"]):not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+#gform_wrapper_4 textarea,
+#gform_wrapper_4 select {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    color: #1f1f1f !important;
+    padding: 11px 14px !important;
+}
+
+#gform_wrapper_4 input:not([type="submit"]):not([type="hidden"]):focus,
+#gform_wrapper_4 textarea:focus,
+#gform_wrapper_4 select:focus {
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(68, 164, 0, 0.12) !important;
+}
+
+#gform_wrapper_4 input[type="submit"],
+#gform_submit_button_4 {
+    background-color: #0000e0 !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 14px 2.5em !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    margin-top: 8px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 224, 0.25) !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    display: block !important;
+}
+
+#gform_wrapper_4 input[type="submit"]:hover,
+#gform_submit_button_4:hover {
+    background-color: #44a400 !important;
+}
+
+
+/* Free Offer form — lock City, State, ZIP */
+#gform_wrapper_4 #input_4_5_3,
+#gform_wrapper_4 #input_4_5_4,
+#gform_wrapper_4 #input_4_5_5 {
+    pointer-events: none !important;
+    background: #d8f0d8 !important;
+    color: #2a5a10 !important;
+    cursor: not-allowed !important;
+    opacity: 0.85 !important;
+    border-color: #a8d8a8 !important;
+}
+
+
+/* Free Offer form — State select vertical alignment */
+#gform_wrapper_4 select {
+    line-height: normal !important;
+    height: auto !important;
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+    vertical-align: middle !important;
+    display: block !important;
+}
+
+
+
+/* ================================================
+   BLOG INDEX — entry card styling (blog only)
+   ================================================ */
+.blog #genesis-content {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.blog #genesis-content>article.entry {
+    border: 1.5px solid #e4eaff !important;
+    border-radius: 14px !important;
+    padding: 28px !important;
+    margin-bottom: 24px !important;
+    background: #fff !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 224, 0.04) !important;
+    width: 100% !important;
+    transition: box-shadow 0.2s, transform 0.2s !important;
+    overflow: hidden !important;
+}
+
+.blog #genesis-content>article.entry:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.1) !important;
+    transform: translateY(-2px) !important;
+}
+
+.blog #genesis-content>article.entry .entry-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    margin-bottom: 4px !important;
+}
+
+.blog #genesis-content>article.entry .entry-title a {
+    color: #1f1f1f !important;
+    text-decoration: none !important;
+}
+
+.blog #genesis-content>article.entry .entry-title a:hover {
+    color: #0000e0 !important;
+}
+
+.blog #genesis-content>article.entry .entry-meta {
+    font-size: 14px !important;
+    color: #999 !important;
+    margin-bottom: 12px !important;
+}
+
+.blog #genesis-content>article.entry .entry-meta a {
+    color: #999 !important;
+}
+
+.blog #genesis-content>article.entry .entry-meta .post-edit-link {
+    display: none !important;
+}
+
+.blog #genesis-content>article.entry .entry-content p {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    color: #333 !important;
+}
+
+.blog #genesis-content>article.entry .entry-image-link img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-height: 400px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 224, 0.08) !important;
+    margin-bottom: 16px !important;
+}
+
+.blog #genesis-content>article.entry .more-link {
+    display: inline-block !important;
+    background: #0000e0 !important;
+    color: #fff !important;
+    padding: 12px 28px !important;
+    border-radius: 100px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    margin-top: 8px !important;
+    transition: background 0.2s !important;
+}
+
+.blog #genesis-content>article.entry .more-link:hover {
+    background: #44a400 !important;
+    color: #fff !important;
+}
+
+.blog #genesis-content>article.entry .entry-categories {
+    display: none !important;
+}
+
+.blog #genesis-content>article.entry .entry-comments-link {
+    display: none !important;
+}
+
+.blog #genesis-content>article.entry .entry-footer {
+    border-top: 1px solid #eef2ff !important;
+    padding-top: 16px !important;
+    margin-top: 0 !important;
+}
+
+.blog #genesis-content>article.entry:last-of-type {
+    margin-bottom: 40px !important;
+}
+
+
+
+/* Homepage — larger text for seniors 50+ */
+.page-id-17 .smt-svc-card h3 {
+    font-size: 18px !important;
+}
+
+.page-id-17 .smt-svc-card p {
+    font-size: 15px !important;
+}
+
+.page-id-17 .smt-step-card h4 {
+    font-size: 16px !important;
+}
+
+.page-id-17 .smt-step-card p {
+    font-size: 14px !important;
+}
+
+.page-id-17 .smt-wcdo-text strong {
+    font-size: 17px !important;
+}
+
+.page-id-17 .smt-wcdo-text span {
+    font-size: 15px !important;
+}
+
+.page-id-17 .smt-test-card blockquote {
+    font-size: 15px !important;
+}
+
+.page-id-17 .smt-test-name {
+    font-size: 15px !important;
+}
+
+.page-id-17 .smt-test-loc {
+    font-size: 13px !important;
+}
+
+.page-id-17 .smt-section-eyebrow {
+    font-size: 13px !important;
+}
+
+.page-id-17 .smt-pricing-badge {
+    font-size: 15px !important;
+}
+
+.page-id-17 .smt-next-steps p {
+    font-size: 15px !important;
+}
+
+.page-id-17 .smt-phone-line {
+    font-size: 15px !important;
+}
+
+
+
+.smt-wcdo-text strong {
+    font-size: 20px !important;
+}
+
+.smt-wcdo-text span {
+    font-size: 17px !important;
+}
+
+.smt-offer-how h3 {
+    font-size: 22px !important;
+}
+
+.smt-offer-how p {
+    font-size: 17px !important;
+}
+
+
+.smt-offer-form-header h3 {
+    font-size: 28px !important;
+}
+
+.smt-offer-form-header p {
+    font-size: 18px !important;
+}
+
+
+
+.smt-next-steps p {
+    font-size: 18px !important;
+}
+
+
+
+/* Single posts — hide native title, meta, comments, filed under */
+.single-post .entry-header {
+    display: none !important;
+}
+
+.single-post .entry-footer .entry-categories {
+    display: none !important;
+}
+
+.single-post .comment-respond,
+.single-post #comments,
+.single-post .entry-comments-link {
+    display: none !important;
+}
+
+
+
+body.single-post .entry-header {
+    display: none !important;
+}
+
+body.single-post .entry-footer {
+    display: none !important;
+}
+
+body.single-post .comment-respond {
+    display: none !important;
+}
+
+
+
+/* Single posts — remove spacing above hero and below CTA */
+.single-post .site-inner {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.single-post .entry {
+    margin-bottom: 0 !important;
+}
+
+.single-post .entry-header:empty {
+    display: none !important;
+}
+
+.single-post .content {
+    padding-bottom: 0 !important;
+}
+
+.single-post .site-inner {
+    padding-bottom: 0 !important;
+}
+
+
+
+/* Hero phone button hover */
+.smt-hero-section .wp-block-button__link[href="tel:+13854974090"] {
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s !important;
+}
+
+.smt-hero-section .wp-block-button__link[href="tel:+13854974090"]:hover {
+    background-color: #ffffff !important;
+    color: #0000e0 !important;
+    border-color: #ffffff !important;
+}
+
+
+
+/* ================================================
+   ABOUT US PAGE (page-id-542)
+   ================================================ */
+.page-id-542 .wp-block-image img {
+    border-radius: 14px !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 224, 0.1) !important;
+}
+
+.page-id-542 .smt-step-card:not(:last-child)::after {
+    display: none !important;
+}
+
+
+
+/* ================================================
+   SERVICES PAGE (page-id-547)
+   ================================================ */
+.page-id-547 .wp-block-image img {
+    border-radius: 14px !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 224, 0.1) !important;
+}
+
+.page-id-547 .smt-pricing-cta {
+    text-align: center !important;
+}
+
+
+
+.page-id-547 .entry-content>.alignfull:nth-child(2) .smt-section-eyebrow,
+.page-id-547 .entry-content>.alignfull:nth-child(2) .wp-block-heading,
+.page-id-547 .entry-content>.alignfull:nth-child(2) p.has-text-color {
+    text-align: center !important;
+}
+
+
+
+/* ================================================
+   NAV — hover underline effect (left-to-right in, right-to-left out)
+   ================================================ */
+.genesis-nav-menu a {
+    position: relative !important;
+    text-decoration: none !important;
+    transition: color 0.2s !important;
+}
+
+.genesis-nav-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: #44a400;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.6s ease;
+}
+
+.genesis-nav-menu a:hover::after,
+.genesis-nav-menu .current-menu-item>a::after {
+    transform: scaleX(1);
+}
+
+/* Nav text turns green on hover and current page */
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item>a {
+    color: #44a400 !important;
+}
+
+/* Exclude "Get an Estimate" button from underline effect */
+.menu-item-get-estimate>a::after {
+    display: none !important;
+}
+
+
+
+/* ================================================
+   NAV — modern font styling (Poppins)
+   ================================================ */
+.genesis-nav-menu a {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    letter-spacing: 0.2px !important;
+}
+
+
+
+/* Get an Estimate button — text stays white on hover */
+.menu-item-get-estimate>a:hover {
+    color: #fff !important;
+}
+
+
+
+/* ================================================
+   HOMEPAGE — normalize CTA button size
+   ================================================ */
+.page-id-17 .wp-block-button__link[href="tel:+13854974090"] {
+    font-size: 18px !important;
+    padding: 14px 32px !important;
+}
+
+
+
+/* Get an Estimate button — text stays white on all states */
+.menu-item-get-estimate>a,
+.menu-item-get-estimate>a:hover,
+.menu-item-get-estimate>a:focus,
+.menu-item-get-estimate>a:active,
+.menu-item-get-estimate>a:visited,
+.menu-item-get-estimate.current-menu-item>a {
+    color: #fff !important;
+}
+
+
+
+/* About Us — center pricing CTA */
+.page-id-542 .smt-pricing-cta {
+    text-align: center !important;
+}
