@@ -1319,3 +1319,81 @@ body.single-post .comment-respond {
 
 
 
+
+
+/* ================================================
+   GRAVITY FLOW INBOX — consistent styling
+   ================================================ */
+.smt-inbox-section .gravityflow-inbox {
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
+}
+
+.smt-inbox-section table.gravityflow-inbox-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.smt-inbox-section table.gravityflow-inbox-table th {
+    background: #f0f8ff !important;
+    color: #1f1f1f !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding: 14px 16px !important;
+    border-bottom: 2px solid #dde6ff !important;
+}
+
+.smt-inbox-section table.gravityflow-inbox-table td {
+    padding: 14px 16px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    border-bottom: 1px solid #f0f4ff !important;
+}
+
+.smt-inbox-section table.gravityflow-inbox-table tr:hover td {
+    background: #f8fdf4 !important;
+}
+
+.smt-inbox-section table.gravityflow-inbox-table a {
+    color: #0000e0 !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+.smt-inbox-section table.gravityflow-inbox-table a:hover {
+    color: #44a400 !important;
+}
+
+/* Gravity Flow buttons */
+.smt-inbox-section input[type="submit"],
+.smt-inbox-section .button,
+.smt-inbox-section .gravityflow-action-button {
+    background: #0000e0 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 10px 24px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+}
+
+.smt-inbox-section input[type="submit"]:hover,
+.smt-inbox-section .button:hover,
+.smt-inbox-section .gravityflow-action-button:hover {
+    background: #44a400 !important;
+}
+
+/* Empty inbox message */
+.smt-inbox-section .gravityflow-no-pending {
+    text-align: center;
+    padding: 48px 20px;
+    color: #999;
+    font-size: 16px;
+}
