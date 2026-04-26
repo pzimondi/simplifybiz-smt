@@ -1614,3 +1614,152 @@ body.single-post .comment-respond {
 
 
 
+/* ================================================
+   LOGIN PAGE — MemberPress login form styling
+   ================================================ */
+.page-template-default .mepr-form,
+.mp_wrapper.mp_login_form {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 36px 32px 28px;
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
+}
+
+/* Hide default page title — we'll style it separately */
+.page-template-default .mepr-form .entry-title {
+    display: none;
+}
+
+/* Form labels */
+.mepr-form .mp-form-label label {
+    font-weight: 700 !important;
+    color: #2a5a10 !important;
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 6px !important;
+    display: block !important;
+}
+
+/* Input fields */
+.mepr-form input[type="text"],
+.mepr-form input[type="password"],
+.mepr-form input[type="email"] {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    color: #1f1f1f !important;
+    padding: 12px 14px !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    box-sizing: border-box !important;
+    transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.mepr-form input[type="text"]:focus,
+.mepr-form input[type="password"]:focus,
+.mepr-form input[type="email"]:focus {
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(68, 164, 0, 0.12) !important;
+}
+
+/* Password field wrapper */
+.mepr-form .mp-hide-pw {
+    position: relative !important;
+}
+
+.mepr-form .mp-hide-pw input[type="password"] {
+    padding-right: 44px !important;
+}
+
+.mepr-form .mp-hide-pw button {
+    position: absolute !important;
+    right: 10px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: none !important;
+    border: none !important;
+    color: #44a400 !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Remember me checkbox */
+.mepr-form #rememberme {
+    accent-color: #44a400 !important;
+    margin-right: 6px !important;
+}
+
+.mepr-form label[for="rememberme"],
+.mepr-form div:has(#rememberme) label {
+    font-size: 14px !important;
+    color: #555 !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+/* Submit button */
+.mepr-form input[type="submit"],
+.mepr-form #wp-submit {
+    background-color: #0000e0 !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 14px 2.5em !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    margin-top: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 224, 0.25) !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    display: block !important;
+    text-align: center !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    transition: background-color 0.2s !important;
+}
+
+.mepr-form input[type="submit"]:hover,
+.mepr-form #wp-submit:hover {
+    background-color: #44a400 !important;
+    color: #ffffff !important;
+}
+
+/* Forgot password link */
+.mepr-login-actions {
+    text-align: center !important;
+    margin-top: 16px !important;
+}
+
+.mepr-login-actions a {
+    color: #0000e0 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: color 0.2s !important;
+}
+
+.mepr-login-actions a:hover {
+    color: #44a400 !important;
+}
+
+/* Spacer cleanup */
+.mepr-form .mp-spacer {
+    height: 8px !important;
+}
+
+/* Form row spacing */
+.mepr-form .mp-form-row {
+    margin-bottom: 18px !important;
+}
+
+
+
