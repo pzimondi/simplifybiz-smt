@@ -16,6 +16,4 @@ class FormIds {
     public const TECH_MEMBERSHIP_ID         = 295;
     public const SUPPORT_MEMBERSHIP_ID      = 297;
     public const MANAGER_MEMBERSHIP_ID      = 296;
-
-    public const GOOGLE_CHAT_WEBHOOK_URL    = 'https://webhook.site/5824f131-1149-49d0-99ab-ba154d3a27f6';
 }

@@ -9,7 +9,7 @@ error_reporting( E_ALL & ~E_NOTICE & ~E_WARNING & ~E_DEPRECATED );
 /**
  * Plugin Name: SMPLFY SMT
  * Version: 1.0
- * Description: Custom plugin for Setup My Technology — Google Chat notifications, form confirmations, and MemberPress automation.
+ * Description: Custom plugin for Setup My Technology — form confirmations, MemberPress automation, and frontend styles.
  * Author: Pastor Zimondi
  * Author URI: https://simplifybiz.com/
  * Requires PHP: 7.4

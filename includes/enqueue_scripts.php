@@ -11,7 +11,7 @@ function enqueue_smt_frontend_scripts() {
         'smplfy-smt-frontend-styles',
         SMPLFY_SMT_PLUGIN_URL . 'public/css/frontend.css',
         [],
-        '1.0.0'
+        '1.0.1'
     );
 }
 
