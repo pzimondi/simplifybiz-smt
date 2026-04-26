@@ -1319,25 +1319,18 @@ body.single-post .comment-respond {
 
 
 
-
-
 /* ================================================
-   GRAVITY FLOW INBOX — consistent styling
+   GRAVITYVIEW TABLES — consistent styling
    ================================================ */
-.smt-inbox-section .gravityflow-inbox {
+.smt-view-section .gv-table-view {
     background: #fff;
     border: 1.5px solid #dde6ff;
     border-radius: 14px;
-    padding: 28px;
+    overflow: hidden;
     box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
 }
 
-.smt-inbox-section table.gravityflow-inbox-table {
-    width: 100% !important;
-    border-collapse: collapse !important;
-}
-
-.smt-inbox-section table.gravityflow-inbox-table th {
+.smt-view-section .gv-table-view th {
     background: #f0f8ff !important;
     color: #1f1f1f !important;
     font-weight: 700 !important;
@@ -1348,31 +1341,48 @@ body.single-post .comment-respond {
     border-bottom: 2px solid #dde6ff !important;
 }
 
-.smt-inbox-section table.gravityflow-inbox-table td {
+.smt-view-section .gv-table-view td {
     padding: 14px 16px !important;
     font-size: 15px !important;
     color: #333 !important;
     border-bottom: 1px solid #f0f4ff !important;
 }
 
-.smt-inbox-section table.gravityflow-inbox-table tr:hover td {
+.smt-view-section .gv-table-view tr:hover td {
     background: #f8fdf4 !important;
 }
 
-.smt-inbox-section table.gravityflow-inbox-table a {
+.smt-view-section .gv-table-view a {
     color: #0000e0 !important;
     font-weight: 600 !important;
     text-decoration: none !important;
 }
 
-.smt-inbox-section table.gravityflow-inbox-table a:hover {
+.smt-view-section .gv-table-view a:hover {
     color: #44a400 !important;
 }
 
-/* Gravity Flow buttons */
-.smt-inbox-section input[type="submit"],
-.smt-inbox-section .button,
-.smt-inbox-section .gravityflow-action-button {
+/* GravityView search bar */
+.smt-view-section .gv-search-box input[type="text"],
+.smt-view-section .gv-search-box input[type="search"] {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    padding: 10px 14px !important;
+    font-size: 15px !important;
+    color: #1f1f1f !important;
+}
+
+.smt-view-section .gv-search-box input[type="text"]:focus,
+.smt-view-section .gv-search-box input[type="search"]:focus {
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(68, 164, 0, 0.12) !important;
+}
+
+.smt-view-section .gv-search-box input[type="submit"],
+.smt-view-section .gv-search-box button {
     background: #0000e0 !important;
     color: #fff !important;
     border: none !important;
@@ -1384,16 +1394,223 @@ body.single-post .comment-respond {
     transition: background 0.2s !important;
 }
 
-.smt-inbox-section input[type="submit"]:hover,
-.smt-inbox-section .button:hover,
-.smt-inbox-section .gravityflow-action-button:hover {
+.smt-view-section .gv-search-box input[type="submit"]:hover,
+.smt-view-section .gv-search-box button:hover {
     background: #44a400 !important;
 }
 
-/* Empty inbox message */
-.smt-inbox-section .gravityflow-no-pending {
+/* GravityView pagination */
+.smt-view-section .gv-widget-pagination {
+    text-align: center !important;
+    padding: 20px 0 !important;
+}
+
+.smt-view-section .gv-widget-pagination a {
+    background: #f0f8ff !important;
+    color: #0000e0 !important;
+    padding: 8px 14px !important;
+    border-radius: 8px !important;
+    margin: 0 4px !important;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+}
+
+.smt-view-section .gv-widget-pagination a:hover {
+    background: #0000e0 !important;
+    color: #fff !important;
+}
+
+.smt-view-section .gv-widget-pagination .current {
+    background: #0000e0 !important;
+    color: #fff !important;
+    padding: 8px 14px !important;
+    border-radius: 8px !important;
+}
+
+/* Empty view message */
+.smt-view-section .gv-no-results {
     text-align: center;
     padding: 48px 20px;
     color: #999;
     font-size: 16px;
 }
+
+
+
+/* ================================================
+   REPORTS — card grid
+   ================================================ */
+.smt-reports-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.smt-report-card {
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 32px 28px;
+    text-decoration: none !important;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(0, 0, 224, 0.04);
+}
+
+.smt-report-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.12);
+    transform: translateY(-3px);
+}
+
+.smt-report-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.smt-report-content {
+    flex: 1;
+}
+
+.smt-report-card h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #1f1f1f !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.smt-report-card p {
+    font-size: 15px !important;
+    color: #666 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+}
+
+.smt-report-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0000e0;
+    transition: color 0.2s;
+}
+
+.smt-report-card:hover .smt-report-link {
+    color: #44a400;
+}
+
+@media only screen and (max-width: 768px) {
+    .smt-reports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .smt-report-card {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+
+
+/* ================================================
+   DASHBOARD — card grid
+   ================================================ */
+.smt-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.smt-dash-card {
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 32px 28px;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(0, 0, 224, 0.04);
+}
+
+.smt-dash-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.12);
+    transform: translateY(-3px);
+}
+
+.smt-dash-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.smt-dash-card h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #1f1f1f !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.smt-dash-card p {
+    font-size: 15px !important;
+    color: #666 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    flex: 1;
+}
+
+.smt-dash-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0000e0;
+    transition: color 0.2s;
+}
+
+.smt-dash-card:hover .smt-dash-link {
+    color: #44a400;
+}
+
+@media only screen and (max-width: 768px) {
+    .smt-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Dashboard — center align section headers */
+.smt-dashboard-section .smt-section-eyebrow,
+.smt-dashboard-section .wp-block-heading,
+.smt-dashboard-section p.has-text-color {
+    text-align: center !important;
+}
+
+
+
+/* ================================================
+   DASHBOARD — 3-column step grid variant
+   ================================================ */
+.smt-steps-grid-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .smt-steps-grid-3 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+
