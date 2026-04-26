@@ -1763,3 +1763,18 @@ body.single-post .comment-respond {
 
 
 
+/* Login page heading */
+.page-id-246 .entry-header {
+    display: none !important;
+}
+
+.page-id-246 .entry-content>.wp-block-heading {
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #0000e0 !important;
+    text-align: center !important;
+    margin-bottom: 0 !important;
+}
+
+
+
