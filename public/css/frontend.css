@@ -1778,3 +1778,159 @@ body.single-post .comment-respond {
 
 
 
+/* ================================================
+   JOB MASTER FORM (Form 6) — matching Get An Estimate styling
+   ================================================ */
+#gform_wrapper_6 {
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 28px 28px 20px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
+}
+
+#gform_wrapper_6 .gfield_label,
+#gform_wrapper_6 .gform-field-label {
+    font-weight: 700 !important;
+    color: #2a5a10 !important;
+    font-size: 0.85em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+#gform_wrapper_6 .gform-field-label--type-sub {
+    font-weight: 600 !important;
+    color: #2a5a10 !important;
+    font-size: 0.8em !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+#gform_wrapper_6 input:not([type="submit"]):not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="password"]),
+#gform_wrapper_6 textarea,
+#gform_wrapper_6 select {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    color: #1f1f1f !important;
+    padding: 11px 14px !important;
+}
+
+#gform_wrapper_6 input[type="password"] {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    color: #1f1f1f !important;
+    padding: 11px 14px !important;
+}
+
+#gform_wrapper_6 input:not([type="submit"]):not([type="hidden"]):focus,
+#gform_wrapper_6 input[type="password"]:focus,
+#gform_wrapper_6 textarea:focus,
+#gform_wrapper_6 select:focus {
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(68, 164, 0, 0.12) !important;
+}
+
+/* Select field alignment */
+#gform_wrapper_6 select {
+    line-height: normal !important;
+    height: auto !important;
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+    vertical-align: middle !important;
+    display: block !important;
+}
+
+/* Section dividers */
+#gform_wrapper_6 .gsection_title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #0000e0 !important;
+    border-bottom: 2px solid #dde6ff !important;
+    padding-bottom: 10px !important;
+}
+
+/* Password strength indicator */
+#gform_wrapper_6 .gfield_password_strength {
+    border-radius: 8px !important;
+    margin-top: 8px !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+}
+
+/* Password show/hide button */
+#gform_wrapper_6 .gform_show_password {
+    background: none !important;
+    border: none !important;
+    color: #44a400 !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+}
+
+/* Submit button */
+#gform_wrapper_6 .gform-footer input[type="submit"],
+#gform_wrapper_6 .gform_footer input[type="submit"],
+#gform_wrapper_6 input[type="submit"],
+#gform_submit_button_6 {
+    background-color: #0000e0 !important;
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 14px 2.5em !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    margin-top: 12px !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 224, 0.25) !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    display: block !important;
+    text-align: center !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    transition: background-color 0.2s !important;
+}
+
+#gform_wrapper_6 .gform-footer input[type="submit"]:hover,
+#gform_wrapper_6 .gform_footer input[type="submit"]:hover,
+#gform_submit_button_6:hover {
+    background-color: #44a400 !important;
+    color: #ffffff !important;
+}
+
+/* PayPal/Stripe payment section */
+#gform_wrapper_6 .gform_ppcp_smart_payment_buttons {
+    margin-top: 16px !important;
+}
+
+#gform_wrapper_6 .ginput_container_custom_card_fields {
+    background: #f8fdf4 !important;
+    border: 1.5px solid #d8f0c0 !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+}
+
+/* Card icon styling */
+#gform_wrapper_6 .gform_card_icon_container {
+    margin-bottom: 12px !important;
+}
+
+/* Order summary / total */
+#gform_wrapper_6 .ginput_container_total .ginput_total {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #0000e0 !important;
+}
+
+/* Product field description */
+#gform_wrapper_6 .gfield_description {
+    font-size: 13px !important;
+    color: #888 !important;
+    margin-top: 4px !important;
+}
+
+
+
