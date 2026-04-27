@@ -1934,3 +1934,36 @@ body.single-post .comment-respond {
 
 
 
+/* Total field — ensure visibility and styling */
+#gform_wrapper_6 #field_6_31,
+#gform_wrapper_6 .gfield--type-total {
+    display: block !important;
+    visibility: visible !important;
+    background: #f8fdf4 !important;
+    border: 1.5px solid #d8f0c0 !important;
+    border-radius: 12px !important;
+    padding: 16px 20px !important;
+    margin-top: 16px !important;
+}
+
+#gform_wrapper_6 #field_6_31 .gfield_label {
+    color: #0000e0 !important;
+    font-size: 1em !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+#gform_wrapper_6 #input_6_31,
+#gform_wrapper_6 .ginput_total {
+    background: transparent !important;
+    border: none !important;
+    font-size: 28px !important;
+    font-weight: 800 !important;
+    color: #0000e0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    display: inline-block !important;
+}
+
+
+
