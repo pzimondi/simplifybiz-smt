@@ -1778,7 +1778,393 @@ body.single-post .comment-respond {
 
 
 
+/* =====================================================
+   FORM 9 — JOB SUBMITTED CONFIRMATION PAGE
+   ===================================================== */
 
+.smt-confirmation {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: "Source Sans Pro", system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+}
+
+.smt-conf-success {
+    text-align: center;
+    padding: 40px 0 32px;
+}
+
+.smt-conf-checkmark {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: #44a400;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 12px 32px rgba(68, 164, 0, 0.28);
+    animation: smt-conf-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.smt-conf-checkmark svg {
+    width: 42px;
+    height: 42px;
+    animation: smt-conf-draw 0.6s ease-out 0.3s both;
+}
+
+@keyframes smt-conf-pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes smt-conf-draw {
+    0% {
+        stroke-dasharray: 50;
+        stroke-dashoffset: 50;
+    }
+
+    100% {
+        stroke-dasharray: 50;
+        stroke-dashoffset: 0;
+    }
+}
+
+.smt-conf-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #44a400;
+    background: #f0fdf4;
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+}
+
+.smt-conf-title {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 12px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.smt-conf-subtitle {
+    font-size: 18px;
+    color: #475569;
+    line-height: 1.55;
+    margin: 0 auto;
+    max-width: 540px;
+}
+
+.smt-conf-card,
+.smt-conf-next {
+    background: #ffffff;
+    border: 1px solid #e8ecf1;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+}
+
+.smt-conf-card-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin: 0 0 18px;
+}
+
+.smt-conf-list {
+    margin: 0;
+    padding: 0;
+}
+
+.smt-conf-list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.smt-conf-list-row:last-child {
+    border-bottom: none;
+}
+
+.smt-conf-list-row dt {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+    margin: 0;
+}
+
+.smt-conf-list-row dd {
+    font-size: 15px;
+    color: #0f172a;
+    font-weight: 600;
+    margin: 0;
+    text-align: right;
+    word-break: break-word;
+}
+
+.smt-conf-list-total dt {
+    font-size: 15px;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.smt-conf-list-total dd {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0000e0;
+}
+
+.smt-conf-section-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 20px;
+    letter-spacing: -0.01em;
+}
+
+.smt-conf-steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.smt-conf-steps li {
+    display: flex;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.smt-conf-steps li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.smt-conf-steps li:first-child {
+    padding-top: 0;
+}
+
+.smt-conf-step-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: #f0fdf4;
+    color: #44a400;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    border: 1.5px solid #c6f0d4;
+}
+
+.smt-conf-step-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 4px;
+}
+
+.smt-conf-step-body strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.smt-conf-step-body span {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.55;
+}
+
+.smt-conf-account {
+    background: linear-gradient(135deg, #eff4fb 0%, #f0fdf4 100%);
+    border: 1px solid #c7d8ef;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+}
+
+.smt-conf-account .smt-conf-section-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.smt-conf-account p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 0 14px;
+}
+
+.smt-conf-account-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e8ecf1;
+    border-radius: 10px;
+    padding: 12px 16px;
+}
+
+.smt-conf-account-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #64748b;
+}
+
+.smt-conf-account-val {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    font-family: 'SF Mono', Monaco, Consolas, monospace;
+}
+
+.smt-conf-ctas {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.smt-conf-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.smt-conf-btn-primary {
+    background: #0000e0;
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 224, 0.25);
+}
+
+.smt-conf-btn-primary:hover {
+    background: #0000b8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 224, 0.35);
+    color: #ffffff;
+}
+
+.smt-conf-btn-arrow {
+    transition: transform 0.2s ease;
+}
+
+.smt-conf-btn-primary:hover .smt-conf-btn-arrow {
+    transform: translateX(4px);
+}
+
+.smt-conf-btn-secondary {
+    background: #ffffff;
+    color: #0f172a;
+    border: 1.5px solid #e2e8f0;
+}
+
+.smt-conf-btn-secondary:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+    color: #0f172a;
+}
+
+.smt-conf-note {
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.smt-conf-note strong {
+    color: #0f172a;
+}
+
+@media (max-width: 600px) {
+    .smt-conf-success {
+        padding: 24px 0;
+    }
+
+    .smt-conf-checkmark {
+        width: 72px;
+        height: 72px;
+    }
+
+    .smt-conf-checkmark svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .smt-conf-card,
+    .smt-conf-next {
+        padding: 22px 20px;
+    }
+
+    .smt-conf-account {
+        padding: 20px;
+    }
+
+    .smt-conf-list-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .smt-conf-list-row dd {
+        text-align: left;
+    }
+
+    .smt-conf-list-total dd {
+        font-size: 24px;
+    }
+
+    .smt-conf-account-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .smt-conf-ctas {
+        flex-direction: column;
+    }
+
+    .smt-conf-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
 
 
 
