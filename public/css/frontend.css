@@ -2168,44 +2168,70 @@ body.single-post .comment-respond {
 
 
 
+#HIDE HEADING
+#gform_wrapper_9 .gform_heading {
+    display: none !important;
+}
+
+
+
 /* =====================================================
    FORM 9 — JOB MASTER FORM (Submit a Job)
-   Scoped to #gform_wrapper_9
+   Matches Form 3 (Get An Estimate) styling
    ===================================================== */
 
+/* Form wrapper — white card with blue-tinted border (matches Form 3) */
 #gform_wrapper_9 {
-    font-family: "Source Sans Pro", system-ui, -apple-system, sans-serif;
-    background: #ffffff;
-    border: 1px solid #e8ecf1;
-    border-radius: 16px;
-    padding: 40px 36px;
-    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.04);
+    background: #fff;
+    border: 1.5px solid #dde6ff;
+    border-radius: 14px;
+    padding: 28px 28px 20px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 224, 0.07);
+    font-family: "Source Sans Pro", sans-serif;
     max-width: 720px;
     margin: 0 auto;
 }
 
-/* Form title */
+/* Hide form heading */
 #gform_wrapper_9 .gform_heading {
-    margin-bottom: 28px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #f1f5f9;
+    display: none !important;
 }
 
-#gform_wrapper_9 .gform_title {
-    font-family: "Poppins", "Source Sans Pro", sans-serif;
-    font-size: 28px !important;
-    font-weight: 800 !important;
-    color: #0f172a !important;
-    margin: 0 !important;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
+/* Field labels — green uppercase (matches Form 3) */
+#gform_wrapper_9 .gfield_label,
+#gform_wrapper_9 .gform-field-label,
+#gform_wrapper_9 legend.gfield_label {
+    font-weight: 700 !important;
+    color: #2a5a10 !important;
+    font-size: 0.85em !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+#gform_wrapper_9 .gfield_required {
+    color: #44a400 !important;
+}
+
+#gform_wrapper_9 .gfield_required_text {
+    font-size: 0.78em !important;
+    font-weight: 500 !important;
+}
+
+/* Sub-labels (First, Last, Street, City, etc.) — keep readable, lowercase */
+#gform_wrapper_9 .gform-field-label--type-sub {
+    font-weight: 500 !important;
+    color: #555 !important;
+    font-size: 0.78em !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    margin-top: 4px !important;
 }
 
 /* Section headers (Personal Details, Job Details) */
 #gform_wrapper_9 .gsection {
     border: none !important;
     padding: 8px 0 4px !important;
-    margin: 24px 0 16px !important;
+    margin: 24px 0 12px !important;
     background: transparent !important;
 }
 
@@ -2214,138 +2240,60 @@ body.single-post .comment-respond {
 }
 
 #gform_wrapper_9 .gsection_title {
-    font-family: "Poppins", "Source Sans Pro", sans-serif;
-    font-size: 12px !important;
+    font-size: 1.1em !important;
     font-weight: 700 !important;
-    color: #44a400 !important;
+    color: #2a5a10 !important;
+    margin: 0 !important;
+    padding-bottom: 8px !important;
+    border-bottom: 2px solid #d8f0d8 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.14em !important;
-    margin: 0 0 12px !important;
-    padding-bottom: 10px !important;
-    border-bottom: 2px solid #e8ecf1 !important;
-    position: relative !important;
+    letter-spacing: 1px !important;
 }
 
-#gform_wrapper_9 .gsection_title::after {
-    content: "" !important;
-    position: absolute !important;
-    bottom: -2px !important;
-    left: 0 !important;
-    width: 40px !important;
-    height: 2px !important;
-    background: #44a400 !important;
-    border-radius: 2px !important;
+/* Input fields — light green (matches Form 3 exactly) */
+#gform_wrapper_9 input:not([type="submit"]):not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+#gform_wrapper_9 textarea,
+#gform_wrapper_9 select {
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
+    border-radius: 8px !important;
+    color: #1f1f1f !important;
+    padding: 11px 14px !important;
+    width: 100% !important;
+    font-family: inherit !important;
+    box-sizing: border-box !important;
 }
 
-/* Field labels */
-#gform_wrapper_9 .gfield_label,
-#gform_wrapper_9 legend.gfield_label {
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    color: #1e293b !important;
-    margin-bottom: 8px !important;
+#gform_wrapper_9 input:not([type="submit"]):not([type="hidden"]):focus,
+#gform_wrapper_9 textarea:focus,
+#gform_wrapper_9 select:focus {
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(68, 164, 0, 0.12) !important;
+}
+
+#gform_wrapper_9 textarea {
+    min-height: 100px !important;
+    resize: vertical !important;
+}
+
+/* State select vertical alignment */
+#gform_wrapper_9 select {
+    line-height: normal !important;
+    height: auto !important;
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+    vertical-align: middle !important;
     display: block !important;
-    line-height: 1.4 !important;
-}
-
-#gform_wrapper_9 .gfield_required {
-    color: #44a400 !important;
-    margin-left: 4px !important;
-    font-weight: 600 !important;
-}
-
-#gform_wrapper_9 .gfield_required_text {
-    font-size: 12px !important;
-    font-weight: 500 !important;
-    color: #64748b !important;
-}
-
-/* Sub-labels (First, Last, Street, City, etc.) */
-#gform_wrapper_9 .gform-field-label--type-sub {
-    font-size: 12px !important;
-    font-weight: 500 !important;
-    color: #64748b !important;
-    margin-top: 6px !important;
-    margin-bottom: 0 !important;
-    text-transform: none !important;
 }
 
 /* Field spacing */
 #gform_wrapper_9 .gfield {
-    margin-bottom: 20px !important;
+    margin-bottom: 16px !important;
 }
 
-/* Text inputs, email, tel, password, textarea, url */
-#gform_wrapper_9 input[type="text"],
-#gform_wrapper_9 input[type="email"],
-#gform_wrapper_9 input[type="tel"],
-#gform_wrapper_9 input[type="password"],
-#gform_wrapper_9 input[type="number"],
-#gform_wrapper_9 input[type="url"],
-#gform_wrapper_9 textarea {
-    width: 100% !important;
-    padding: 12px 14px !important;
-    border: 1.5px solid #e2e8f0 !important;
-    border-radius: 8px !important;
-    font-size: 15px !important;
-    color: #1e293b !important;
-    background: #ffffff !important;
-    font-family: inherit !important;
-    line-height: 1.5 !important;
-    box-sizing: border-box !important;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-}
-
-#gform_wrapper_9 textarea {
-    min-height: 110px !important;
-    resize: vertical !important;
-}
-
-#gform_wrapper_9 input[type="text"]:hover,
-#gform_wrapper_9 input[type="email"]:hover,
-#gform_wrapper_9 input[type="tel"]:hover,
-#gform_wrapper_9 input[type="password"]:hover,
-#gform_wrapper_9 textarea:hover {
-    border-color: #cbd5e1 !important;
-}
-
-#gform_wrapper_9 input[type="text"]:focus,
-#gform_wrapper_9 input[type="email"]:focus,
-#gform_wrapper_9 input[type="tel"]:focus,
-#gform_wrapper_9 input[type="password"]:focus,
-#gform_wrapper_9 textarea:focus {
-    outline: none !important;
-    border-color: #0000e0 !important;
-    box-shadow: 0 0 0 3px rgba(0, 0, 224, 0.12) !important;
-}
-
-/* Select dropdowns */
-#gform_wrapper_9 select {
-    width: 100% !important;
-    padding: 12px 40px 12px 14px !important;
-    border: 1.5px solid #e2e8f0 !important;
-    border-radius: 8px !important;
-    font-size: 15px !important;
-    color: #1e293b !important;
-    background-color: #ffffff !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
-    background-repeat: no-repeat !important;
-    background-position: right 14px center !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-    cursor: pointer !important;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
-}
-
-#gform_wrapper_9 select:focus {
-    outline: none !important;
-    border-color: #0000e0 !important;
-    box-shadow: 0 0 0 3px rgba(0, 0, 224, 0.12) !important;
-}
-
-/* Service Type checkboxes (pill-style cards) */
+/* Service Type checkboxes — pill-style cards with green theme */
 #gform_wrapper_9 .gfield_checkbox {
     list-style: none !important;
     margin: 4px 0 0 !important;
@@ -2359,9 +2307,9 @@ body.single-post .comment-respond {
     display: flex !important;
     align-items: center !important;
     gap: 10px !important;
-    padding: 12px 18px !important;
-    background: #fafbfc !important;
-    border: 1.5px solid #e2e8f0 !important;
+    padding: 10px 16px !important;
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
     border-radius: 100px !important;
     cursor: pointer !important;
     transition: all 0.2s ease !important;
@@ -2369,31 +2317,32 @@ body.single-post .comment-respond {
 }
 
 #gform_wrapper_9 .gfield_checkbox .gchoice:hover {
-    border-color: #c6f0d4 !important;
-    background: #ffffff !important;
+    border-color: #44a400 !important;
+    background: #f4fef4 !important;
 }
 
 #gform_wrapper_9 .gfield_checkbox .gchoice:has(input:checked) {
     border-color: #44a400 !important;
-    background: #f0fdf4 !important;
+    background: #d8f0d8 !important;
 }
 
 #gform_wrapper_9 .gfield_checkbox input[type="checkbox"] {
     width: 16px !important;
     height: 16px !important;
-    cursor: pointer !important;
     accent-color: #44a400 !important;
     margin: 0 !important;
     flex-shrink: 0 !important;
+    cursor: pointer !important;
 }
 
 #gform_wrapper_9 .gfield_checkbox label {
     font-size: 14px !important;
-    font-weight: 500 !important;
-    color: #334155 !important;
+    font-weight: 600 !important;
+    color: #2a5a10 !important;
     cursor: pointer !important;
     margin: 0 !important;
-    line-height: 1.4 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 6px !important;
@@ -2402,10 +2351,10 @@ body.single-post .comment-respond {
 #gform_wrapper_9 .gfield_checkbox .ginput_price {
     font-size: 13px !important;
     font-weight: 700 !important;
-    color: #44a400 !important;
+    color: #0000e0 !important;
 }
 
-/* "Select All" toggle button */
+/* Select All toggle */
 #gform_wrapper_9 .gfield-choice-toggle-all {
     width: 100% !important;
     margin-top: 8px !important;
@@ -2413,8 +2362,8 @@ body.single-post .comment-respond {
 
 #gform_wrapper_9 .gfield_choice_all_toggle {
     background: transparent !important;
-    border: 1.5px solid #e2e8f0 !important;
-    color: #64748b !important;
+    border: 1.5px solid #a8d8a8 !important;
+    color: #2a5a10 !important;
     padding: 8px 16px !important;
     border-radius: 100px !important;
     font-size: 13px !important;
@@ -2425,46 +2374,40 @@ body.single-post .comment-respond {
 
 #gform_wrapper_9 .gfield_choice_all_toggle:hover {
     border-color: #44a400 !important;
-    color: #44a400 !important;
-    background: #f0fdf4 !important;
+    color: #fff !important;
+    background: #44a400 !important;
 }
 
-/* Total field — highlighted */
+/* Total field — highlighted with brand colors */
 #gform_wrapper_9 .ginput_container_total {
-    background: linear-gradient(135deg, #f0fdf4 0%, #eff4fb 100%) !important;
-    border: 1.5px solid #c6f0d4 !important;
-    border-radius: 12px !important;
+    background: #d8f0d8 !important;
+    border: 1.5px solid #44a400 !important;
+    border-radius: 10px !important;
     padding: 14px 18px !important;
 }
 
 #gform_wrapper_9 #field_9_4 .gfield_label {
-    font-size: 13px !important;
-    font-weight: 700 !important;
-    color: #44a400 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.1em !important;
+    color: #2a5a10 !important;
 }
 
 #gform_wrapper_9 .ginput_total {
     background: transparent !important;
     border: none !important;
     padding: 0 !important;
-    font-size: 28px !important;
+    font-size: 24px !important;
     font-weight: 800 !important;
     color: #0000e0 !important;
     box-shadow: none !important;
+    width: auto !important;
 }
 
 #gform_wrapper_9 .ginput_total:focus {
-    outline: none !important;
+    background: transparent !important;
+    border: none !important;
     box-shadow: none !important;
 }
 
-/* Date picker */
-#gform_wrapper_9 .ginput_container_date {
-    position: relative !important;
-}
-
+/* Date picker icon */
 #gform_wrapper_9 .ui-datepicker-trigger {
     margin-left: 8px !important;
     cursor: pointer !important;
@@ -2480,9 +2423,9 @@ body.single-post .comment-respond {
     display: flex !important;
     align-items: flex-start !important;
     gap: 12px !important;
-    padding: 16px !important;
-    background: #f8fafc !important;
-    border: 1px solid #e8ecf1 !important;
+    padding: 14px !important;
+    background: #edfaed !important;
+    border: 1.5px solid #a8d8a8 !important;
     border-radius: 10px !important;
 }
 
@@ -2490,17 +2433,20 @@ body.single-post .comment-respond {
     width: 18px !important;
     height: 18px !important;
     margin-top: 2px !important;
-    accent-color: #0000e0 !important;
+    accent-color: #44a400 !important;
     cursor: pointer !important;
     flex-shrink: 0 !important;
 }
 
 #gform_wrapper_9 .gfield_consent_label {
     font-size: 14px !important;
-    color: #475569 !important;
+    color: #2a5a10 !important;
     line-height: 1.55 !important;
     cursor: pointer !important;
     margin: 0 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-weight: 500 !important;
 }
 
 /* Password strength indicator */
@@ -2510,71 +2456,65 @@ body.single-post .comment-respond {
     border-radius: 6px !important;
     font-size: 13px !important;
     font-weight: 600 !important;
-    background: #f8fafc !important;
-    border: 1px solid #e8ecf1 !important;
+    background: #edfaed !important;
+    border: 1px solid #a8d8a8 !important;
+    color: #2a5a10 !important;
 }
 
 #gform_wrapper_9 .gform_show_password {
     background: transparent !important;
     border: none !important;
-    color: #64748b !important;
+    color: #44a400 !important;
     cursor: pointer !important;
     padding: 8px !important;
 }
 
-#gform_wrapper_9 .gform_show_password:hover {
-    color: #0000e0 !important;
-}
-
 /* PayPal field */
 #gform_wrapper_9 #field_9_20 {
-    background: #f8fafc !important;
-    border: 1px solid #e8ecf1 !important;
-    border-radius: 12px !important;
-    padding: 20px !important;
-    margin-top: 8px !important;
+    background: #f8fff4 !important;
+    border: 1.5px solid #d4f0b8 !important;
+    border-radius: 10px !important;
+    padding: 18px !important;
 }
 
 #gform_wrapper_9 #field_9_20 legend.gfield_label {
-    font-size: 12px !important;
-    font-weight: 700 !important;
     color: #0000e0 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.12em !important;
-    margin-bottom: 12px !important;
 }
 
-/* Submit button */
+/* Submit button — blue pill (matches Form 3 exactly) */
 #gform_wrapper_9 .gform_footer {
-    margin-top: 28px !important;
-    padding-top: 20px !important;
-    border-top: 1px solid #f1f5f9 !important;
+    margin-top: 20px !important;
+    padding-top: 16px !important;
     text-align: center !important;
 }
 
-#gform_wrapper_9 .gform_button {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background: #0000e0 !important;
+#gform_wrapper_9 .gform_button,
+#gform_submit_button_9 {
+    background-color: #0000e0 !important;
     color: #ffffff !important;
     font-size: 16px !important;
     font-weight: 700 !important;
-    padding: 14px 36px !important;
     border: none !important;
-    border-radius: 10px !important;
+    border-radius: 100px !important;
+    padding: 14px 2.5em !important;
     cursor: pointer !important;
-    transition: all 0.2s ease !important;
-    line-height: 1 !important;
+    width: 100% !important;
+    margin-top: 12px !important;
     box-shadow: 0 6px 20px rgba(0, 0, 224, 0.25) !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
+    height: auto !important;
+    line-height: 1.5 !important;
+    display: block !important;
+    text-align: center !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    transition: background-color 0.2s !important;
 }
 
-#gform_wrapper_9 .gform_button:hover {
-    background: #0000b8 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 10px 28px rgba(0, 0, 224, 0.35) !important;
+#gform_wrapper_9 .gform_button:hover,
+#gform_submit_button_9:hover {
+    background-color: #44a400 !important;
+    color: #ffffff !important;
 }
 
 /* Validation errors */
@@ -2601,8 +2541,7 @@ body.single-post .comment-respond {
     background: #fef2f2 !important;
 }
 
-#gform_wrapper_9 .gfield_validation_message,
-#gform_wrapper_9 .validation_message {
+#gform_wrapper_9 .gfield_validation_message {
     color: #991b1b !important;
     font-size: 13px !important;
     margin-top: 6px !important;
@@ -2612,51 +2551,19 @@ body.single-post .comment-respond {
     display: inline-block !important;
 }
 
-/* "What happens next" callout below form */
-.smt-next-steps {
-    max-width: 720px !important;
-    margin: 24px auto 0 !important;
-    background: #fffbeb !important;
-    border: 1px solid #fde68a !important;
-    border-left: 4px solid #f9b500 !important;
-    border-radius: 10px !important;
-    padding: 18px 22px !important;
-}
-
-.smt-next-steps p {
-    font-size: 14px !important;
-    color: #78400a !important;
-    line-height: 1.6 !important;
-    margin: 0 !important;
-}
-
-.smt-next-steps strong {
-    color: #b17a00 !important;
-    font-weight: 700 !important;
-}
-
-/* Mobile responsive */
+/* Mobile */
 @media (max-width: 600px) {
     #gform_wrapper_9 {
-        padding: 28px 20px !important;
-    }
-
-    #gform_wrapper_9 .gform_title {
-        font-size: 22px !important;
+        padding: 20px 18px !important;
     }
 
     #gform_wrapper_9 .ginput_total {
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
 
     #gform_wrapper_9 .gfield_checkbox .gchoice {
         width: 100% !important;
     }
-
-    #gform_wrapper_9 .gform_button {
-        width: 100% !important;
-    }
 }
-
 
 
