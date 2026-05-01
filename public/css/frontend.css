@@ -2168,9 +2168,13 @@ body.single-post .comment-respond {
 
 
 
-/* Hide Product field on Form 9 */
+/* Hide Product field on Form 9 but keep it functional */
 #field_9_1 {
-    display: none !important;
+    visibility: hidden;
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
 }
 
 
