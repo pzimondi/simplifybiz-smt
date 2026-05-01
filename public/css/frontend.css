@@ -2168,3 +2168,10 @@ body.single-post .comment-respond {
 
 
 
+/* Hide Product field on Form 9 */
+#field_9_1 {
+    display: none !important;
+}
+
+
+
